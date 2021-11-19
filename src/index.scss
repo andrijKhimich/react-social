@@ -31,3 +31,8 @@ body {
   padding: 0 10px;
   margin: 0 auto;
 }
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}

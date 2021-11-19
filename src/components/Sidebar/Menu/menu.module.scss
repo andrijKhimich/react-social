@@ -1,0 +1,21 @@
+.nav {
+  padding: 10px 0;
+}
+
+.list {
+  padding: 0;
+}
+
+.item {
+  list-style-type: none;
+  font-size: 14px;
+  padding: 5px;
+  &.active {
+    background-color: white;
+    border: 1px solid rgba(gray, .4);
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
