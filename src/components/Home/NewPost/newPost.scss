@@ -1,0 +1,19 @@
+.formPost {
+  width: 100%;
+  text-align: right;
+
+  textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: white;
+    resize: none;
+  }
+
+  button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background-color: #4267b2;
+  }
+}

@@ -1,0 +1,12 @@
+.postAuthor {
+  display: flex;
+  align-items: center;
+  img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid rgba(gray, .4);
+    margin-right: 10px;
+  }
+}
