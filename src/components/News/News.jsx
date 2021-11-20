@@ -2,7 +2,7 @@ import "./News.scss"
 
 const News = () => {
   return (
-    <div className="News">
+    <div className="news">
       News
     </div>
   )

@@ -8,36 +8,35 @@ import Home from "./components/Home/Home";
 import Messages from "./components/Messages/Messages";
 import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
+// import { Route, Routes } from 'react-router';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div className="main-wrapper">
-      <Header />
-      <div className="container">
-        <div className="wrapper">
-          <Sidebar />
-          <div className="content">
-            {/* <Content /> */}
-            {/* main banner for all pages */}
-            <div className="banner">
-              <img src={banner} alt="banner" />
+    <BrowserRouter>
+      <div className="main-wrapper">
+        <Header />
+        <div className="container">
+          <div className="wrapper">
+            <Sidebar />
+            <div className="content">
+              {/* <Content /> */}
 
+              {/* main banner for all pages */}
+              <div className="banner">
+                <img src={banner} alt="banner" />
+              </div>
+              <Routes>
+                <Route path="/" exact element={<Home />} />
+                <Route path="/messages" element={<Messages />} />
+                <Route path="/news" element={<News />} />
+                <Route path="/settings" element={<Settings />} />
+              </Routes>
             </div>
-
-            <Home />
-            <Messages />
-            <News />
-            <Settings /> {/* other inner components */
-            /* Home
-              About
-              Photos
-              Events
-              etc.
-          */}
           </div>
         </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
