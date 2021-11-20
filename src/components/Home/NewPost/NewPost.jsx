@@ -1,4 +1,4 @@
-import "./newPost.scss"
+import "./NewPost.scss"
 
 const NewPost = () => {
   return (

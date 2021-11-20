@@ -1,4 +1,4 @@
-import "./postAuthor.scss";
+import "./PostAuthor.scss";
 
 const PostAuthor = (props) => {
   return (

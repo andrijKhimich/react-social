@@ -1,5 +1,6 @@
 import UserPhoto from "./UserPhoto/UserPhoto";
 import UserName from "./UserName/UserName";
+import "./User";
 
 
 const User = () => {

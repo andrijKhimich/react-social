@@ -5,19 +5,16 @@ const Menu = () => {
     <nav className={menu.nav}>
       <ul className={menu.list}>
         <li className={`${menu.item} ${menu.active}`}>
-          <a href="./">Home</a>
+          <a href="./home">Home</a>
         </li>
         <li className={menu.item}>
-          <a href="./">Profile</a>
+          <a href="./messages">Messages</a>
         </li>
         <li className={menu.item}>
-          <a href="./">Messages</a>
+          <a href="./news">News</a>
         </li>
         <li className={menu.item}>
-          <a href="./">News</a>
-        </li>
-        <li className={menu.item}>
-          <a href="./">Settings</a>
+          <a href="./settings">Settings</a>
         </li>
       </ul>
     </nav>

@@ -1,4 +1,4 @@
-import "./postText.scss";
+import "./PostText.scss";
 
 const PostText = (props) => {
   return (

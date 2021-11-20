@@ -1,6 +1,7 @@
 import User from "./User/User";
-import "./sidebar.scss";
 import Menu from "./Menu/Menu";
+
+import "./Sidebar.scss";
 
 const Sidebar = () => {
   return (

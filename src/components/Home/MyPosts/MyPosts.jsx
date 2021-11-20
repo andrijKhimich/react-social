@@ -1,12 +1,8 @@
-import "./myPosts.scss"
+import "./MyPosts.scss"
 import PostAuthor from "./PostAuthor/PostAuthor";
 import PostText from "./PostText/PostText";
 
-
-
-
 const MyPosts = (props) => {
-
   return (
     <div className="post">
       <PostAuthor author={props.author} avatar={props.userPhoto}/>

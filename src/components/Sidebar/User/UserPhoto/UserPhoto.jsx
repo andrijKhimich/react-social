@@ -1,6 +1,6 @@
 import userAvatar from "../../../../images/user-photo.jpg";
 
-import "./userPhoto.scss";
+import "./UserPhoto.scss";
 
 const UserPhoto = () => {
   return (
