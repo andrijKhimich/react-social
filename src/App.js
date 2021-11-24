@@ -11,7 +11,8 @@ import Settings from "./components/Settings/Settings";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const App = (props) => {
-  // debugger;
+
+  // console.log(props);
 
   return (
     <BrowserRouter>

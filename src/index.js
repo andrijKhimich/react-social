@@ -4,9 +4,13 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import state from "./redux/state.js"
+import { addPost } from "./redux/state.js";
+
+addPost('Hello');
+addPost('Hello');
+
 
 export default ReactDOM.render(
-
   <React.StrictMode>
     <App messages={state.messagesPage} posts={state.homePage}/>
   </React.StrictMode>, document.getElementById('root'));

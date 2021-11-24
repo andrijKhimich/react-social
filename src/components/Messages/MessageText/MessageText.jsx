@@ -1,7 +1,9 @@
 
 const MessageText = (props) => {
   return (
-    <p >{props.text}</p>
+    <div className="messages__guest">
+      <p>{props.text}</p>
+    </div>
   )
 }
 
