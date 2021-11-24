@@ -8,10 +8,11 @@ import Home from "./components/Home/Home";
 import Messages from "./components/Messages/Messages";
 import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
-// import { Route, Routes } from 'react-router';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-const App = () => {
+const App = (props) => {
+  // debugger;
+
   return (
     <BrowserRouter>
       <div className="main-wrapper">
@@ -20,15 +21,16 @@ const App = () => {
           <div className="wrapper">
             <Sidebar />
             <div className="content">
-              {/* <Content /> */}
 
               {/* main banner for all pages */}
               <div className="banner">
                 <img src={banner} alt="banner" />
               </div>
+
+              {/* <Content /> */}
               <Routes>
-                <Route path="/" exact element={<Home />} />
-                <Route path="/messages" element={<Messages />} />
+                <Route path="/" element={<Home state={props.posts}/>} />
+                <Route path="/messages" element={<Messages state={props.messages} />} />
                 <Route path="/news" element={<News />} />
                 <Route path="/settings" element={<Settings />} />
               </Routes>

@@ -7,7 +7,7 @@ const User = () => {
   return (
     <div className="user">
       <UserPhoto />
-      <UserName/>
+      <UserName />
     </div>
   )
 

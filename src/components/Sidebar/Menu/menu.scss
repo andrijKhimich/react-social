@@ -1,0 +1,26 @@
+.nav {
+  padding: 10px 0;
+
+  &__list {
+    padding: 0;
+  }
+
+  &__item {
+    list-style-type: none;
+    font-size: 14px;
+
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 5px;
+      display: block;
+      border: 1px solid transparent;
+
+      &.active {
+        background-color: white;
+        border: 1px solid rgba(gray, .4);
+        border-radius: 3px;
+      }
+    }
+  }
+}

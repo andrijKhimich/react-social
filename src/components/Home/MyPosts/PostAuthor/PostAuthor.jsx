@@ -1,10 +1,16 @@
 import "./PostAuthor.scss";
 
+// import {useLocation } from "react-router-dom";
+
+
 const PostAuthor = (props) => {
+
+  console.log(props);
+
   return (
     <div className="postAuthor">
-      <img src={props.avatar} alt="User name" />
-      <p>{props.author}</p>
+      <img src={props.avatar} alt={props.name} />
+      <p>{props.name}</p>
     </div>
   )
 }

@@ -1,9 +1,37 @@
-import "./Messages.scss"
+// importing styles
+import "./Messages.scss";
 
-const Messages = () => {
+// importing components
+import MessageText from "./MessageText/MessageText";
+import MessageUser from "./MessageUser/MessageUser";
+
+const Messages = (props) => {
+
+  // destruction variables
+  const userText = props.state.messagesUsersTexts;
+  const userData = props.state.messagesUsersData;
+  console.log(userData);
+
+  let messagesUserText = userText.map(messagesText => {
+    return (
+      <MessageText  key={messagesText.id} text={messagesText.text}/>
+    )
+  });
+
+  let messagesUser = userData.map(messagesUserData => {
+    return (
+      <MessageUser id={messagesUserData.id} key={messagesUserData.id} name={messagesUserData.name} />
+    )
+  });
+
   return (
     <div className="messages">
-      Messages
+      <div className="messages__users">
+        {messagesUser}
+      </div>
+      <div className="messages__text">
+        {messagesUserText}
+      </div>
     </div>
   )
 }
