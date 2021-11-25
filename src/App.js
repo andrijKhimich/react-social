@@ -30,7 +30,7 @@ const App = (props) => {
 
               {/* <Content /> */}
               <Routes>
-                <Route path="/" element={<Home state={props.posts}/>} />
+                <Route path="/" element={<Home state={props.posts} addNewPost={props.addNewPost}/>} />
                 <Route path="/messages" element={<Messages state={props.messages} />} />
                 <Route path="/news" element={<News />} />
                 <Route path="/settings" element={<Settings />} />

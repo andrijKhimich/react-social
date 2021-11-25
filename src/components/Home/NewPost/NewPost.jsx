@@ -1,16 +1,18 @@
 import "./NewPost.scss"
 import React from 'react';
 
-const NewPost = () => {
-
+const NewPost = (props) => {
+  // console.log(props.message)
   let newPostEl = React.createRef();
 
   const addPost = (e) => {
     e.preventDefault();
     let text = newPostEl.current.value;
-    console.log(text);
+
+    newPostEl.current.value = "";
+    props.addNewPost(text);
   }
-  
+
 
   return (
     <form className="formPost">

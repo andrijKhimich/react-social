@@ -1,3 +1,5 @@
+import { rerenderEntireTree } from "../render.js";
+
 const state = {
   homePage: {
     posts: [{
@@ -31,14 +33,17 @@ const state = {
 
 
 
-export let addPost = (postText) => {
+export let addNewPost = (postText) => {
   let newPost = {
     id: 2,
     text: postText,
     name: "Andrew"
   }
 
-  state.homePage.posts.push(newPost);
+  state.homePage.posts.unshift(newPost);
+
+  rerenderEntireTree(state);
+
 }
 
 export default state;
