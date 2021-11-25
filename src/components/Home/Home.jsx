@@ -18,7 +18,7 @@ const Home = (props) => {
 
   return (
     <div className="home border">
-      <NewPost message={props.post} addNewPost={props.addNewPost} />
+      <NewPost message={props.post} addNewPost={props.addNewPost} updateNewPost={props.updateNewPost}/>
       {userPost}
     </div>
   )

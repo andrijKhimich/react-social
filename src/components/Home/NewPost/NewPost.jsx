@@ -14,9 +14,16 @@ const NewPost = (props) => {
   }
 
 
+  const updateNewPost = () => {
+    let newText = newPostEl.current.value;
+    props.updateNewPost(newText);
+    debugger;
+  }
+
+
   return (
     <form className="formPost">
-      <textarea ref={newPostEl} className="border" name="newPostText" rows="5"></textarea>
+      <textarea ref={newPostEl} onChange={updateNewPost} className="border" name="newPostText" rows="5"></textarea>
       <button onClick={addPost}>Add post</button>
     </form>
   )

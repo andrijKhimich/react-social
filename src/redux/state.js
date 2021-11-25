@@ -11,17 +11,17 @@ const state = {
 
   messagesPage: {
     messagesUsersData: [{
-        id: 1,
-        name: "Andrew",
-      },
-      {
-        id: 2,
-        name: "Vika",
-      },
-      {
-        id: 3,
-        name: "Maria",
-      }
+      id: 1,
+      name: "Andrew",
+    },
+    {
+      id: 2,
+      name: "Vika",
+    },
+    {
+      id: 3,
+      name: "Maria",
+    }
     ],
 
     messagesUsersTexts: [{
@@ -39,11 +39,14 @@ export let addNewPost = (postText) => {
     text: postText,
     name: "Andrew"
   }
-
   state.homePage.posts.unshift(newPost);
-
   rerenderEntireTree(state);
-
 }
+
+export const updateNewPost = (newText) => {
+  state.homePage.posts = newText;
+  debugger;
+}
+
 
 export default state;
